@@ -1,0 +1,10 @@
+module cylshell(rad,hei,thi){
+difference() {
+    cylinder(r=rad,h=hei,$fn=20);
+    cylinder(r=rad-thi,h=hei,$fn=20);}
+};
+module sphershell(rad,thi){
+difference() {
+    sphere(r=rad,$fn=20);
+    sphere(r=rad-thi,$fn=20);}
+};
